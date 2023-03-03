@@ -12,7 +12,7 @@ from os import path
 
 from yt_dlp import YoutubeDL
 
-from STARMUSIC.utils.formatters import seconds_to_min
+from StarMusic.utils.formatters import seconds_to_min
 
 
 class SoundAPI:
