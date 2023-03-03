@@ -59,9 +59,9 @@ async def init():
         "Successfully Imported Modules "
     )
     await userbot.start()
-    await StarMusic.start()
+    await Star.start()
     try:
-        await StarMusic.stream_call(
+        await Star.stream_call(
             "http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4"
         )
     except NoActiveGroupCall:
@@ -71,7 +71,7 @@ async def init():
         sys.exit()
     except:
         pass
-    await StarMusic.decorators()
+    await Star.decorators()
     LOGGER("StarMusic").info("StarMusic Bot Started Successfully")
     await idle()
 
