@@ -14,7 +14,7 @@ import heroku3
 from pyrogram import filters
 
 import config
-from STARMUSIC.core.mongo import pymongodb
+from StarMusic.core.mongo import pymongodb
 
 from .logging import LOGGER
 
