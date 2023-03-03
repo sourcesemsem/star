@@ -1,15 +1,11 @@
 #
-# Copyright (C) 2021-2022 by TeamYukki@Github, < https://github.com/TeamYukki >.
+# Copyright (C) 2021-2022 by TeamStar@Github, < https://github.com/DaRrKNneSs_1 >.
 #
-# This file is part of < https://github.com/TeamYukki/YukkiMusicBot > project,
+# This file is part of < https://github.com/DaRrkNneSs1/STAR_MUSIC > project,
 # and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/TeamYukki/YukkiMusicBot/blob/master/LICENSE >
+# Please see < https://github.com/DaRrkNneSs1/STAR_MUSIC/blob/master/LICENSE >
 #
 # All rights reserved.
-
-
-# Commands in Every Language
-
 # Bot Commands
 PING_COMMAND : ["ping"]
 START_COMMAND : ["start"]
@@ -17,18 +13,18 @@ HELP_COMMAND : ["help"]
 SETTINGS_COMMAND : ["settings", "setting"]
 RELOAD_COMMAND : ["admincache", "reload"]
 GSTATS_COMMAND : ["gstats"]
-STATS_COMMAND : ["stats"]
+STATS_COMMAND : ["احصائيات"]
 LANGUAGE_COMMAND : ["lang", "language", "langs"]
 
 # Play Commands
-PLAY_COMMAND : ["play", "vplay", "cplay", "cvplay", "playforce", "vplayforce", "cplayforce", "cvplayforce"]
+PLAY_COMMAND : ["تشغيل", "تشغيل فيديو", "cplay", "cvplay", "playforce", "vplayforce", "cplayforce", "cvplayforce"]
 PLAYMODE_COMMAND : ["playmode"]
 CHANNELPLAY_COMMAND : ["channelplay"]
 STREAM_COMMAND : ["stream", "cstream", "streamforce"]
 
 #Playlists Command
-PLAYLIST_COMMAND : ["playlist"]
-DELETEPLAYLIST_COMMAND : ["deleteplaylist"]
+PLAYLIST_COMMAND : ["قائمة التشغيل"]
+DELETEPLAYLIST_COMMAND : ["حذف قائمة التشغيل"]
 
 
 # Tools
@@ -38,26 +34,26 @@ LYRICS_COMMAND : ["lyrics"]
 
 
 # Admin Commands
-AUTH_COMMAND : ["auth"]
-UNAUTH_COMMAND : ["unauth"]
-AUTHUSERS_COMMAND : ["authusers"]
-PAUSE_COMMAND : ["pause", "cpause"]
-RESUME_COMMAND : ["resume", "cresume"]
-MUTE_COMMAND : ["mute", "cmute"]
-UNMUTE_COMMAND : ["unmute", "cunmute"]
-STOP_COMMAND : ["stop", "end", "cstop", "cend"]
-SKIP_COMMAND : ["skip", "cskip"]
-SHUFFLE_COMMAND : ["shuffle", "cshuffle"]
-LOOP_COMMAND : ["loop", "cloop"]
-SEEK_COMMAND : ["seek", "cseek", "seekback", "cseekback"]
+AUTH_COMMAND : ["رفع مسؤول"]
+UNAUTH_COMMAND : ["تنزيل مسؤول"]
+AUTHUSERS_COMMAND : ["المسئوليين"]
+PAUSE_COMMAND : ["ايقاف", "cpause"]
+RESUME_COMMAND : ["استمر", "cresume"]
+MUTE_COMMAND : ["اسكت", "cmute"]
+UNMUTE_COMMAND : ["اتكلم", "cunmute"]
+STOP_COMMAND : ["انهاء", "end", "cstop", "cend"]
+SKIP_COMMAND : ["تخطي", "cskip"]
+SHUFFLE_COMMAND : ["خلط", "cshuffle"]
+LOOP_COMMAND : ["حلقة", "cloop"]
+SEEK_COMMAND : ["بحث", "cseek", "seekback", "cseekback"]
 RESTART_COMMAND : ["restart"]
 
 # Sudo Users Commaands
 
 # Sudo Command
-ADDSUDO_COMMAND : ["addsudo"]
-DELSUDO_COMMAND : ["delsudo"]
-SUDOUSERS_COMMAND : ["sudolist"]
+ADDSUDO_COMMAND : ["رفع مطور"]
+DELSUDO_COMMAND : ["تنزيل مطور"]
+SUDOUSERS_COMMAND : ["المطورين"]
 
 #Broadcast 
 BROADCAST_COMMAND : ["broadcast"]

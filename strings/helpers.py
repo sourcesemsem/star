@@ -1,118 +1,117 @@
 #
-# Copyright (C) 2021-2022 by TeamYukki@Github, < https://github.com/TeamYukki >.
+# Copyright (C) 2021-2022 by TeamStar@Github, < https://github.com/DaRrKNneSs_1 >.
 #
-# This file is part of < https://github.com/TeamYukki/YukkiMusicBot > project,
+# This file is part of < https://github.com/DaRrkNneSs1/STAR_MUSIC > project,
 # and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/TeamYukki/YukkiMusicBot/blob/master/LICENSE >
+# Please see < https://github.com/DaRrkNneSs1/STAR_MUSIC/blob/master/LICENSE >
 #
 # All rights reserved.
+HELP_1 = """✅**<u>اوامر الادمنيه:</u>**
 
-HELP_1 = """✅**<u>Admin Commands:</u>**
+**c** اوامر الموسيقى.
 
-**c** stands for channel play.
-
-/pause or /cpause - Pause the playing music.
-/resume or /cresume- Resume the paused music.
-/mute or /cmute- Mute the playing music.
-/unmute or /cunmute- Unmute the muted music.
-/skip or /cskip- Skip the current playing music.
-/stop or /cstop- Stop the playing music.
-/shuffle or /cshuffle- Randomly shuffles the queued playlist.
-/seek or /cseek - Forward Seek the music to your duration
-/seekback or /cseekback - Backward Seek the music to your duration
+/ايقاف- لإيقاف الموسيقى مؤقتاً
+/استمر- لإستمرار الموسيقى
+/اسكت- لكتم الموسيقى.
+/اتكلم- لإلغاء كتم الموسيقى.
+/تخطي- لتخطي الموسيقى.
+/انهاء- لإنهاء الموسيقى.
+/خلط- ترتيب عشوائي لقائمة التشغيل في قائمة الانتظار.
+/بحث- للبحث عن موسيقى
+/الغاء بحث- لإلغاء بحث عن الموسيقى
 /restart - Restart bot for your chat .
 
 
-✅<u>**Specific Skip:**</u>
-/skip or /cskip [Number(example: 3)] 
-    - Skips music to a the specified queued number. Example: /skip 3 will skip music to third queued music and will ignore 1 and 2 music in queue.
+✅<u>**تخطي محدد**</u>
+/تخطي [Number(example: 3)] 
+    - يتخطى الموسيقى إلى الرقم المحدد في قائمة الانتظار. مثال: سيتخطى / skip 3 الموسيقى إلى الموسيقى في قائمة الانتظار الثالثة ويتجاهل الموسيقى 1 و 2 في قائمة الانتظار.
 
-✅<u>**Loop Play:**</u>
-/loop or /cloop [enable/disable] or [Numbers between 1-10] 
-    - When activated, bot loops the current playing music to 1-10 times on voice chat. Default to 10 times.
+✅<u>**حلقة التشغيل:**</u>
+/حلقة [enable/disable] or [Numbers between 1-10] 
+    -عند التنشيط ، يقوم البوت بتكرار تشغيل الموسيقى الحالية إلى 1-10 مرات في الدردشة الصوتية. افتراضي إلى 10 مرات.
 
-✅<u>**Auth Users:**</u>
-Auth Users can use admin commands without admin rights in your chat.
+✅<u>**المسؤولون:**</u>
+يمكن لمستخدمي المصادقة استخدام أوامر المسؤول بدون حقوق المسؤول في الدردشة.
 
-/auth [Username] - Add a user to AUTH LIST of the group.
-/unauth [Username] - Remove a user from AUTH LIST of the group.
-/authusers - Check AUTH LIST of the group."""
+/رفع مسؤول [Username] - تمت الإضافة إلى قائمة المستخدمين المعتمدين لمجموعتك.
+/تنزيل مسؤول [Username] - تمت إزالته من قائمة المستخدمين المعتمدين لهذه المجموعة.
+/المسئولون - Check AUTH LIST of the group."""
 
 
-HELP_2 = """✅<u>**Play Commands:**</u>
+HELP_2 = """✅<u>**اوامر التشغيل:**</u>
 
-Available Commands = play , vplay , cplay
+Available Commands = تشغيل , تشغيل فيديو , cplay
 
 ForcePlay Commands = playforce , vplayforce , cplayforce
 
-**c** stands for channel play.
-**v** stands for video play.
+**c** قناة تشغيل الموسيقى.
+**v** قناة تشغيل الفيديوهات.
 **force** stands for force play.
 
-/play or /vplay or /cplay  - Bot will start playing your given query on voice chat or Stream live links on voice chats.
+/تشغيل or /تشغيل فيديو or /cplay  - سيبدأ البوت في تشغيل استعلامك المحدد في الدردشة الصوتية أو بث الروابط المباشرة على الدردشات الصوتية.
 
 /playforce or /vplayforce or /cplayforce -  **Force Play** stops the current playing track on voice chat and starts playing the searched track instantly without disturbing/clearing queue.
 
 /channelplay [Chat username or id] or [Disable] - Connect channel to a group and stream music on channel's voice chat from your group.
 
 
-✅**<u>Bot's Server Playlists:</u>**
-/playlist  - Check Your Saved Playlist On Servers.
-/deleteplaylist - Delete any saved music in your playlist
-/play  - Start playing Your Saved Playlist from Servers."""
+✅**<u>سيرڤر قائمة التشغيل:</u>**
+/قائمة التشغيل  - لفحص قائمة التشغيل.
+/حذف قائمة التشغيل - لحذف قائمة التشغيل.
+/تشغيل  - لتشغيل الموسيقى."""
 
 
-HELP_3 = """✅<u>**Bot Commands:**</u>
+HELP_3 = """✅<u>**اوامر البوت:**</u>
 
-/stats - Get Top 10 Tracks Global Stats, Top 10 Users of bot, Top 10 Chats on bot, Top 10 Played in a chat etc etc.
+/احصائيات - احصل على أفضل 10 مسارات للإحصائيات العالمية ، أفضل 10 مستخدمين للروبوت ، أفضل 10 محادثات على الروبوت ، أفضل 10 تم لعبها في محادثة ، إلخ.
 
-/sudolist - Check Sudo Users of Yukki Music Bot
+/المسؤولون الاعلى - بحث عن المسؤولون الاعلى  of STAR MUSIC
 
-/lyrics [Music Name] - Searches Lyrics for the particular Music on web.
+/كلمات [Music Name] - يبحث في كلمات عن موسيقى معينة على الويب.
 
-/song [Track Name] or [YT Link] - Download any track from youtube in mp3 or mp4 formats.
+/غني [Track Name] or [YT Link] - تحميل اي موسيقى in mp3 or mp4 formats.
 
-/player -  Get a interactive Playing Panel.
+/المشغل -  احصل على لوحة موسيقى تفاعلية..
 
 **c** stands for channel play.
 
 /queue or /cqueue- Check Queue List of Music."""
 
-HELP_4 = """✅<u>**Extra  Commands:**</u>
+HELP_4 = """✅<u>**اوامر اضافيه:**</u>
 /start - Start the Music Bot.
-/help  - Get Commands Helper Menu with detailed explanations of commands.
+/help  - احصل على قائمة مساعد الأوامر مع شرح مفصل للأوامر.
 /ping- Ping the Bot and check Ram, Cpu etc stats of Bot.
 
-✅<u>**Group Settings:**</u>
-/settings - Get a complete group's settings with inline buttons
+✅<u>**اعدادات المجموعه:**</u>
+/settings - احصل على إعدادات المجموعة الكاملة باستخدام الأزرار المضمنة
 
-🔗 **Options in Settings:**
+🔗 **الخيارات في الاعدادات:**
 
-1️⃣ You can set **Audio Quality** you want to stream on voice chat.
+1️⃣ يمكنك ضبط ** جودة الصوت ** التي تريد بثها على الدردشة الصوتية.
 
-2️⃣ You can set **Video Quality** you want to stream on voice chat.
+2️⃣ يمكنك ضبط ** جودة الفيديو ** التي تريد بثها على الدردشة الصوتية.
 
-3️⃣ **Auth Users**:- You can change admin commands mode from here to everyone or admins only. If everyone, anyone present in you group will be able to use admin commands(like /skip, /stop etc)
+3️⃣ **المسئولون**:- يمكنك تغيير وضع أوامر المسؤول من هنا للجميع أو للمسؤولين فقط. إذا كان الجميع ، أي شخص موجود في مجموعتك سيكون قادرًا على استخدام أوامر المسؤول (تشغيل / تخطي ، / إيقاف ، إلخ)
 
-4️⃣ **Clean Mode:** When enabled deletes the bot's messages after 5 mins from your group to make sure your chat remains clean and good.
+4️⃣ **وضع التنظيف:** عند التمكين ، يحذف رسائل البوت بعد 5 دقائق من مجموعتك للتأكد من بقاء محادثتك نظيفة وجيدة.
 
-5️⃣ **Command Clean** : When activated, Bot will delete its executed commands (/play, /pause, /shuffle, /stop etc) immediately.
+5️⃣ **امر التنظيف** : عند التنشيط ، سيحذف Bot أوامره المنفذة (/ play ، / pause ، / shuffle ، / stop وما إلى ذلك) على الفور.
 
-6️⃣ **Play Settings:**
+6️⃣ **اعدادات الالعاب:**
 
-/playmode - Get a complete play settings panel with buttons where you can set your group's play settings. 
+/وضع الالعاب - احصل على لوحة إعدادات العاب كاملة مع أزرار حيث يمكنك ضبط إعدادات العاب مجموعتك.
 
-<u>Options in playmode:</u>
+<u>الخيارات فوضع الالعاب:</u>
 
-1️⃣ **Search Mode** [Direct or Inline] - Changes your search mode while you give /play mode. 
+1️⃣ **وضع البحث** [Direct or Inline] - Changes your search mode while you give /play mode. 
 
-2️⃣ **Admin Commands** [Everyone or Admins] - If everyone, anyone present in you group will be able to use admin commands(like /skip, /stop etc)
+2️⃣ **اوامر المسؤول** [الجميع or المسؤول] - إذا كان الجميع ، أي شخص موجود في مجموعتك سيكون قادرًا على استخدام أوامر المسؤول (تشغيل / تخطي ، / إيقاف ، إلخ)
 
-3️⃣ **Play Type** [Everyone or Admins] - If admins, only admins present in group can play music on voice chat."""
+3️⃣ **التحكم في الموسيقى** [الجميع or المسؤول] - لو المسؤول فهو الوحيد القادر على التحكم في التشغيل والتخطي والايقاف اما اذا الجميع فالجميع قادر على التحكم"""
 
-HELP_5 = """🔰**<u>ADD & REMOVE SUDO USERS :</u>**
-/addsudo [Username or Reply to a user]
-/delsudo [Username or Reply to a user]
+HELP_5 = """🔰**<u>اضافة او حذف مطورين :</u>**
+/رفع مطور [Username or Reply to a user]
+/تنزيل مطور [Username or Reply to a user]
 
 🛃**<u>HEROKU:</u>**
 /usage - Dyno Usage.
