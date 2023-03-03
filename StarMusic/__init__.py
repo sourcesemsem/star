@@ -7,7 +7,7 @@
 #
 # All rights reserved.
 
-from StarMusic.core.bot import starBot
+from StarMusic.core.bot import StarBot
 from StarMusic.core.dir import dirr
 from StarMusic.core.git import git
 from StarMusic.core.userbot import Userbot
