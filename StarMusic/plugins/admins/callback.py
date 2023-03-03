@@ -6,23 +6,23 @@ from pyrogram.types import CallbackQuery, InlineKeyboardMarkup
 from config import (AUTO_DOWNLOADS_CLEAR, BANNED_USERS,
                     SOUNCLOUD_IMG_URL, STREAM_IMG_URL,
                     TELEGRAM_AUDIO_URL, TELEGRAM_VIDEO_URL, adminlist)
-from YukkiMusic import YouTube, app
-from YukkiMusic.core.call import Yukki
-from YukkiMusic.misc import SUDOERS, db
-from YukkiMusic.utils.database import (is_active_chat,
+from StarMusic import YouTube, app
+from StarMusic.core.call import Yukki
+from StarMusic.misc import SUDOERS, db
+from StarMusic.utils.database import (is_active_chat,
                                        is_music_playing, is_muted,
                                        is_nonadmin_chat, music_off,
                                        music_on, mute_off, mute_on,
                                        set_loop)
-from YukkiMusic.utils.decorators.language import languageCB
-from YukkiMusic.utils.formatters import seconds_to_min
-from YukkiMusic.utils.inline.play import (panel_markup_1,
+from StarMusic.utils.decorators.language import languageCB
+from StarMusic.utils.formatters import seconds_to_min
+from StarMusic.utils.inline.play import (panel_markup_1,
                                           panel_markup_2,
                                           panel_markup_3,
                                           stream_markup,
                                           telegram_markup)
-from YukkiMusic.utils.stream.autoclear import auto_clean
-from YukkiMusic.utils.thumbnails import gen_thumb
+from StarMusic.utils.stream.autoclear import auto_clean
+from StarMusic.utils.thumbnails import gen_thumb
 
 wrong = {}
 
