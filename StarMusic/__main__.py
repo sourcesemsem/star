@@ -17,7 +17,7 @@ from pytgcalls.exceptions import NoActiveGroupCall
 import config
 from config import BANNED_USERS
 from StarMusic import LOGGER, app, userbot
-from StarMusic.core.call import StarMusic
+from StarMusic.core.call import Star
 from StarMusic.plugins import ALL_MODULES
 from StarMusic.utils.database import get_banned_users, get_gbanned
 
