@@ -71,7 +71,7 @@
       "SUPPORT_GROUP": {
         "description": "احصل على الهاش من هنا https://my.telegram.org",
         "value": "https://t.me/SUPP0RT_STAR",
-        "required": false
+        "required": true
       },
       "UPSTREAM_REPO": {
         "description": "اتركها كما هي",
