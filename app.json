@@ -28,6 +28,11 @@
         "value": "True",
         "required": false
       },
+      "SUPPORT_GROUP": {
+        "description": "لينك جروبك",
+        "value": "https://t.me/SUPP0RT_STAR",
+        "required": true
+      },
       "BOT_TOKEN": {
         "description": "احصل على توكن البوت من botfather",
         "value": "",
