@@ -67,11 +67,6 @@
         "description": "ايدي جروب البوت . يجب عليك اضافة البوت في المجموعه ورفعه مشرف بكامل الصلاحيات .",
         "value": "",
         "required": true
-        
-      "SUPPORT_GROUP": {
-        "description": "احصل على الهاش من هنا https://my.telegram.org",
-        "value": "https://t.me/SUPP0RT_STAR",
-        "required": true
       },
       "UPSTREAM_REPO": {
         "description": "اتركها كما هي",
