@@ -407,7 +407,7 @@ async def play_commnd(
                     _,
                     track_id,
                     user_id,
-                    "v" if video else "a",
+                    "فيديو" if video else "a",
                     "c" if channel else "g",
                     "f" if fplay else "d",
                 )
