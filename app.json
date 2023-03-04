@@ -33,6 +33,11 @@
         "value": "https://t.me/SUPP0RT_STAR",
         "required": true
       },
+      "SUPPORT_CHANNEL": {
+        "description": "",
+        "value": "https://t.me/S0URCE_STAR",
+        "required": false
+      },
       "BOT_TOKEN": {
         "description": "احصل على توكن البوت من botfather",
         "value": "",
