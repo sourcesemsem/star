@@ -80,7 +80,7 @@
       },
       "UPSTREAM_REPO": {
         "description": "اتركها كما هي",
-        "value": "https://github.com/DaRrkNneSs1/STAR_MUSIC",
+        "value": "https://github.com/sourcesemsem/star",
         "required": true
       },
       "UPSTREAM_BRANCH": {
